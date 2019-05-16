@@ -23,13 +23,17 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 30px;
+}
+* {
+  color: #000;
+}
+button {
+  font-weight: bold;
 }
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: inline-block;
   border-radius: 200px;
 }
