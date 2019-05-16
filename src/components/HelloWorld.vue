@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>Vuex tutorial by @rakibtg</p>
+    <p>Vuex tutorial by <a href="https://twitter.com/rakibtg">@rakibtg</a></p>
   </div>
 </template>
 
@@ -28,6 +28,7 @@ li {
 }
 a {
   color: #42b983;
+  text-decoration: none;
 }
 p {
   font-size: 20px;
