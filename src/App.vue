@@ -2,8 +2,6 @@
   <div id="app">
     <img class="logo" alt="Vue logo" src="@/assets/logo.jpg">
 
-    <h3 :style="color">{{ message }}</h3>
-
     <HelloWorld msg="Vuex from Zero to One"/>
 
   </div>
@@ -11,21 +9,10 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
   components: {
     HelloWorld
-  },
-  computed: {
-    color () {
-      return `
-        color: ${this.$store.getters['alert/getAlerts']['color']};
-      `
-    },
-    message () {
-      return this.$store.getters['alert/getAlerts']['message']
-    }
   }
 }
 </script>
