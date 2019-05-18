@@ -2,7 +2,8 @@
   <div id="app">
     <img class="logo" alt="Vue logo" src="@/assets/logo.jpg">
 
-    <HelloWorld msg="Vuex from Zero to One"/>
+    <h3 :style="color">{{message}}</h3>
+    <HelloWorld/>
 
   </div>
 </template>
@@ -13,6 +14,16 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  computed: {
+    color () {
+      return `
+        color: ${this.$store.state.alert.color};
+      `
+    },
+    message () {
+      return this.$store.state.alert.message
+    }
   }
 }
 </script>
